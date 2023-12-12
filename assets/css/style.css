@@ -924,6 +924,9 @@ a:hover {
     .container {
         --spacer: 30px;
     }
+    .header-mobile {
+        background: #fbfaff;
+    }
     .hero__row {
         flex-direction: column-reverse;
     }
@@ -1187,7 +1190,6 @@ a:hover {
         height: 50px;
         /* top: 10vh; */
         left: 90%;
-
         animation: len 0.5s infinite alternate;
     }
     @keyframes len {

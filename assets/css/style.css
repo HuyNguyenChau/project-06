@@ -110,18 +110,25 @@ a:hover {
     gap: 43px;
 }
 .navbar__link {
-    color: #51586a;
+    color: #334060;
     font-family: DM Sans;
     font-size: 1.8rem;
     font-weight: 400;
 }
 /* Header-mobile */
+/* .header-mobile {
+    z-index: 3;
+    top: 0;
+    position: sticky;
+    background: #fbfaff;
+}
+
 .header__mobile {
     background: #fbfaff;
     display: flex;
     gap: 10px;
     align-items: center;
-}
+} */
 .logo-mobile {
     width: 70px;
     height: 70px;
@@ -152,7 +159,7 @@ a:hover {
     backdrop-filter: blur(10px);
 }
 .menu-drawer {
-    z-index: 0;
+    z-index: 100;
     position: absolute;
     inset: 0 0 0 40%;
     background: rgba(0, 0, 0, 0.2);
@@ -163,7 +170,6 @@ a:hover {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .menu-checkbox:checked ~ .menu-drawer {
-    z-index: 100;
     transform: scale(1);
     opacity: 1;
 }
@@ -1048,6 +1054,9 @@ a:hover {
         line-height: 1.16;
         letter-spacing: -1.44px;
     }
+    .project__top-desc {
+        padding-left: 0;
+    }
     .project-item__title {
         font-size: 2.4rem;
         line-height: 1.41;
@@ -1166,5 +1175,30 @@ a:hover {
         background-image: url(../img/feedback-right-mobile.svg);
         width: 83px;
         height: 51px;
+    }
+    .page-up {
+        z-index: 98;
+        position: fixed;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        /* top: 10vh; */
+        left: 90%;
+
+        animation: len 0.5s infinite alternate;
+    }
+    @keyframes len {
+        from {
+            top: 90vh;
+            color: #cca;
+        }
+        to {
+            top: 91vh;
+            color: #ccc;
+        }
+    }
+    .page-up__img {
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
     }
 }

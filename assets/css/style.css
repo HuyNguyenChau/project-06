@@ -1016,8 +1016,8 @@ a:hover {
         min-width: 147px;
         font-size: 1.6rem;
     }
-    .hero__img {
-        margin-top: 20px;
+    .hero__img::after {
+        top: 20px;
     }
     .hero__title {
         font-size: 4.2rem;
@@ -1188,17 +1188,17 @@ a:hover {
         display: inline-block;
         width: 50px;
         height: 50px;
-        /* top: 10vh; */
+        top: 84vh;
         left: 90%;
         animation: len 0.5s infinite alternate;
     }
     @keyframes len {
         from {
-            top: 90vh;
+            top: 84vh;
             color: #cca;
         }
         to {
-            top: 91vh;
+            top: 85vh;
             color: #ccc;
         }
     }

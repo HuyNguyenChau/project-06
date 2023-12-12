@@ -1016,8 +1016,11 @@ a:hover {
         min-width: 147px;
         font-size: 1.6rem;
     }
-    .hero__img::after {
-        top: 20px;
+    .hero__image-wrap {
+        margin-top: 20px;
+    }
+    .header__img-icon {
+        margin-left: 0;
     }
     .hero__title {
         font-size: 4.2rem;
@@ -1205,5 +1208,10 @@ a:hover {
     .page-up__img {
         backdrop-filter: blur(10px);
         border-radius: 50%;
+    }
+    .footer__bottom-desc,
+    .footer__privacy-left,
+    .footer__privacy-right {
+        font-size: 1.6rem;
     }
 }

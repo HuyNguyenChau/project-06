@@ -1013,6 +1013,9 @@ a:hover {
         min-width: 147px;
         font-size: 1.6rem;
     }
+    .hero__img {
+        margin-top: 20px;
+    }
     .hero__title {
         font-size: 4.2rem;
         letter-spacing: -1.68px;

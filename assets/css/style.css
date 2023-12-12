@@ -337,6 +337,9 @@ a:hover {
     color: #080415;
     font-weight: 600;
 }
+.hero__img-name:hover {
+    text-shadow: 0 0 1px currentColor;
+}
 
 /* ----------------------------------------------------------Design--------------------------------------------------------- */
 .design {
@@ -471,8 +474,15 @@ a:hover {
     line-height: 1.667;
     text-decoration-line: underline;
 }
+.project-item__right {
+    overflow: hidden;
+}
 .project-item__img {
     width: 100%;
+    transition: transform 0.5s ease;
+}
+.project-item__img:hover {
+    transform: scale(110%);
 }
 .project-btn__wrap {
     text-align: center;
@@ -799,10 +809,17 @@ a:hover {
     margin-top: 70px;
     --spacer: 30px;
 }
+.atmosphere__column {
+    overflow: hidden;
+}
 .atmosphere__img {
     width: 100%;
     height: 529px;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.atmosphere__img:hover {
+    transform: scale(110%);
 }
 /* --------------------------------------------------Book------------------------------------------------------------------- */
 .book {
